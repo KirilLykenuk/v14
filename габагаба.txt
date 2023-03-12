@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+int a,b,c;
+printf("a = ");
+scanf("%d",&a);
+printf("b = ");
+scanf("%d",&b);
+printf("с = ");
+scanf("%d",&c);
+if(a<b & a<c)
+{
+    printf("Число а найменьше.");
+}
+else if(b<a & b<c)
+{
+    printf("Число b найменьше.");
+}
+else if(c<b & c<a)
+{
+    printf("Число c найменьше.");
+}
+else
+{
+    printf("N");
+}
+}
