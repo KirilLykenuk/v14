@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int x, z;
+    double y;
+    
+
+    printf("Введіть значення x: ");
+    scanf("%d", &x);
+    
+    printf("Введіть значення z: ");
+    scanf("%d", &z);
+    
+   
+    if (x >= 0 && x != 2 * z) {
+        y = sqrt(x) + 2 * sqrt(x * z) / (sqrt(x) - 2 * sqrt(x * z));
+        printf("Значення функції: %.2f\n", y);
+    } else {
+        printf("Неможливо обчислити значення функції\n");
+    }
+    
+    return 0;
+}
