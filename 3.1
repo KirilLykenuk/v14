@@ -1,0 +1,32 @@
+ #include <stdio.h>
+#include <math.h>
+
+int main() {
+    int y, z;
+    double result;
+  
+    printf("Введіть значення y: ");
+    scanf("%d", &y);
+    
+    printf("Введіть значення z: ");
+    scanf("%d", &z);
+    
+    if (y == -8) {
+        if (z == 2 * y) {
+            printf("Неможливо обчислити вираз: ділення на нуль\n");
+        } else {
+            result = sqrt(3) * y / (z - 2 * y);
+            printf("Значення функції: %.2f\n", result);
+        }
+    } else if (y == 10) {
+        result = y / 2.0 + 15 * z;
+        printf("Значення функції: %.2f\n", result);
+    } else if (y == 2) {
+        result = y * (z - 7 * z);
+        printf("Значення функції: %.2f\n", result);
+    } else {
+        printf("Неможливо обчислити вираз: невідома умова для y\n");
+    }
+    
+    return 0;
+}
